@@ -139,6 +139,14 @@ const Footer = () => {
             >
               © {currentYear} Allah Rakha. Made with
               <AiOutlineHeart className="text-red-500" size={16} />
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-[#999999] text-sm flex items-center gap-2"
+            >
               All rights reserved.
             </motion.p>
 

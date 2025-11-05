@@ -21,14 +21,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      // FIXED: Restored padding-top (pt-24) to create space for the navbar
+      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-24 pb-16 px-6 md:px-20"
     >
-      {/* === Animated Background (FIXED) === */}
+      {/* === Animated Background === */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#00171f] via-[#00a8e8]/10 to-[#00171f]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,168,232,0.1),transparent_50%)]"></div>
-        {/* FIXED: Changed grid lines from faint white (rgba(255,255,255,0.02)) 
-          to faint prussian_blue (rgba(0, 52, 89, 0.15)) to match your palette and screenshot.
-        */}
         <div 
           className="absolute inset-0 bg-[size:60px_60px]"
           style={{
@@ -52,7 +50,8 @@ const Hero = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      {/* Container no longer needs px-6, it's on the parent section */}
+      <div className="container mx-auto relative z-10 w-full">
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 pb-24 lg:pb-0">
           
@@ -61,24 +60,25 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-8"
+              // FIXED: Adjusted spacing for new padding
+              className="space-y-8" 
             >
               {/* Greeting */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                // Text is centered on mobile, left-aligned on desktop
                 className="flex items-center gap-3 justify-center lg:justify-start"
               >
                 <div className="w-12 h-0.5 bg-gradient-to-r from-[#00a8e8] to-[#007ea7]"></div>
-                <span className="text-[#cccccc] font-medium tracking-wider uppercase text-sm">
+                <span className="text-[#cccccc] font-medium tracking-wider uppercase text-[13px]">
                   Welcome to my portfolio
                 </span>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-[#00a8e8] to-[#007ea7]"></div>
               </motion.div>
 
               {/* Main Heading */}
-              <div className="space-y-4 text-center lg:text-left"> {/* Centered on mobile */}
+              <div className="space-y-4 text-center lg:text-left">
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -133,7 +133,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
-                className="text-xl text-[#cccccc] leading-relaxed max-w-xl text-center lg:text-left" // Centered on mobile
+                className="text-xl text-[#cccccc] leading-relaxed max-w-xl text-center lg:text-left"
               >
                 Passionate full-stack developer with 2+ years of experience
                 crafting exceptional digital experiences. I specialize in React,
@@ -190,7 +190,7 @@ const Hero = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex-1 max-w-lg w-full relative justify-center items-center hidden lg:flex"
           >
-            <div className="relative w-72 left-34 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full flex items-center justify-center overflow-hidden bg-[#003459]/20 shadow-lg border border-[#003459]">
+            <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full flex items-center justify-center overflow-hidden bg-[#003459]/20 shadow-lg border border-[#003459]">
               <div className="absolute inset-0 bg-[#00a8e8]/20 rounded-full blur-3xl opacity-70 animate-pulse-slow" style={{ animationDuration: '6s' }} />
               <img
                 src="/mypic.png" 
@@ -206,7 +206,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-4 left-1/2 lg:left-8/4 transform -translate-x-1/2"
+        className="absolute bottom-4 left-1/2 lg:left-2/4 transform -translate-x-1/2"
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}

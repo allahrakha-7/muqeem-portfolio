@@ -100,7 +100,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative right-3">
           {/* Timeline Line */}
           {/* 6. Timeline line gradient from 'picton_blue' to 'cerulean' */}
           <div className="absolute left-4 lg:left-1/2 lg:transform lg:-translate-x-0.5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#00a8e8] via-[#007ea7] to-[#00a8e8]"></div>
@@ -120,9 +120,9 @@ const Experience = () => {
               >
                 {/* Timeline Dot */}
                 {/* 7. Timeline dot gradient, border changed to 'rich_black' */}
-                <div className="absolute left-4 lg:left-1/2 lg:transform lg:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-[#00a8e8] to-[#007ea7] rounded-full border-4 border-[#00171f] z-10">
+                <div className="absolute left-2.5 lg:left-1/2 lg:transform lg:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-[#00a8e8] to-[#007ea7] rounded-full border-4 border-[#00171f] z-10">
                   {experience.current && (
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#00a8e8] to-[#007ea7] rounded-full animate-ping"></div>
+                    <div className="absolute inset-0  bg-gradient-to-r from-[#00a8e8] to-[#007ea7] rounded-full animate-ping"></div>
                   )}
                 </div>
 

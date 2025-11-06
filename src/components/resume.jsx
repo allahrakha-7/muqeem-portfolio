@@ -12,7 +12,7 @@ export default function Resume() {
         <div className="p-6 border-b">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 className="text-3xl font-bold">Allah Rakha</h1>
+              <h1 className="text-3xl font-bold">Muqeem Malik</h1>
               <div className="mt-2 flex items-center gap-2 text-sm text-gray-500">
                 <FaMapMarkerAlt className="h-4 w-4" />
                 <span>Lahore, Pakistan</span>
@@ -31,10 +31,10 @@ export default function Resume() {
               <div className="flex items-center gap-2">
                 <FaLinkedin className="h-4 w-4" />
                 <a
-                  href="https://www.linkedin.com/in/allahrakha7/"
+                  href="https://www.linkedin.com/in/muqeem-malik-166401295"
                   className="text-sm text-blue-600 hover:underline"
                 >
-                  linkedin.com/in/allahrakha7/
+                  linkedin.com/in/muqeemmalik/
                 </a>
               </div>
             </div>

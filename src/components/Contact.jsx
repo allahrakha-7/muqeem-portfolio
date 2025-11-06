@@ -40,7 +40,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phoneNumber = "923018082787";
+    const phoneNumber = "923349878084";
 
     const formattedMessage = `*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n\n*Message:*\n${message}`;
 
@@ -119,7 +119,7 @@ const Contact = () => {
               </h3>
               <p className="text-[#cccccc] leading-relaxed mb-6">
                 I am a skilled software developer with experience in building
-                scalable web applications using React, Next.js, Express.js and
+                scalable web applications using React, React Native, Express.js and
                 Node.js. I specialize in creating user-friendly
                 interfaces and robust backend systems, with a strong focus on
                 performance and efficiency.
@@ -147,7 +147,7 @@ const Contact = () => {
                   <div>
                     <p className="text-[#999999] text-sm">Email</p>
                     <p className="text-[#ffffff] font-medium">
-                      armozi07911000@gmail.com
+                      muqeemnaeem777@gmail.com
                     </p>
                   </div>
                 </div>
@@ -175,9 +175,9 @@ const Contact = () => {
               >
                 <div className="grid grid-cols-3 gap-4">
                   {[
-                    { number: "5+", label: "Projects" },
+                    { number: "15+", label: "Projects" },
                     { number: "2+", label: "Years Exp." },
-                    { number: "15+", label: "Happy Clients" },
+                    { number: "30+", label: "Happy Clients" },
                   ].map((stat) => (
                     <div key={stat.label}>
                       <div className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-[#00a8e8] to-[#007ea7] bg-clip-text text-transparent mb-1">
@@ -195,9 +195,9 @@ const Contact = () => {
                 className="bg-[#003459] rounded-2xl p-6 flex items-center justify-center gap-4 border border-[#003459] shadow-lg"
               >
                 {[
-                  { icon: AiOutlineGithub, href: "https://github.com/allahrakha-7/", label: "GitHub" },
-                  { icon: AiOutlineLinkedin, href: "https://www.linkedin.com/in/allahrakha7/", label: "LinkedIn" },
-                  { icon: AiOutlineInstagram, href: "https://www.instagram.com/allahrakha_821?igsh=MXVqOG9uZHh1d2V5bA==", label: "Instagram" },
+                  { icon: AiOutlineGithub, href: "https://github.com/ruwwaad/portfolio", label: "GitHub" },
+                  { icon: AiOutlineLinkedin, href: "https://www.linkedin.com/in/muqeem-malik-166401295 ", label: "LinkedIn" },
+                  { icon: AiOutlineInstagram, href: "https://www.instagram.com/mmuqeemmalik?igsh=NG1iMHZyMmZmeW1h", label: "Instagram" },
                 ].map(({ icon: Icon, href, label }) => (
                   <motion.a
                     key={label}

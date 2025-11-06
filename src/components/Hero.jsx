@@ -87,7 +87,7 @@ const Hero = () => {
                 >
                   Hi, I&apos;m{" "}
                   <span className="bg-gradient-to-r from-[#00a8e8] to-[#007ea7] bg-clip-text text-transparent">
-                    Allah Rakha
+                    Muqeem Malik
                   </span>
                 </motion.h1>
 
@@ -99,9 +99,9 @@ const Hero = () => {
                 >
                   <TypeAnimation
                     sequence={[
-                      "Full-Stack Developer", 2000,
-                      "React Specialist", 2000,
-                      "Node.js Expert", 2000,
+                      "Software Engineer", 2000,
+                      "React Native Specialist", 2000,
+                      "Frontend Expert", 2000,
                       "Tech Consultant", 2000,
                     ]}
                     wrapper="span"
@@ -123,7 +123,7 @@ const Hero = () => {
                   <div className="absolute inset-0 bg-[#00a8e8]/20 rounded-full blur-3xl opacity-70 animate-pulse-slow" style={{ animationDuration: '6s' }} />
                   <img
                     src="/mypic.png"
-                    alt="Allah Rakha"
+                    alt="Muqeem Malik"
                     className="relative z-10 w-full h-full object-cover rounded-full"
                   />
                 </div>
@@ -135,9 +135,9 @@ const Hero = () => {
                 transition={{ delay: 0.8, duration: 0.8 }}
                 className="text-xl text-[#cccccc] leading-relaxed max-w-xl text-center lg:text-left"
               >
-                Passionate full-stack developer with 2+ years of experience
-                crafting exceptional digital experiences. I specialize in React,
-                Node.js, and modern web technologies to bring ideas to life.
+                Passionate software developer with 2+ years of experience
+                crafting exceptional digital experiences. I specialize in React Native,
+                Node.js, and modern app & web technologies to bring ideas to life.
               </motion.p>
 
               <motion.div
@@ -160,9 +160,9 @@ const Hero = () => {
                   <span className="text-[#cccccc] font-medium">Follow me:</span>
                   <div className="flex gap-4">
                     {[
-                      { icon: AiOutlineGithub, href: "https://github.com/allahrakha-7/", label: "GitHub" },
-                      { icon: AiOutlineLinkedin, href: "https://www.linkedin.com/in/allahrakha7/", label: "LinkedIn" },
-                      { icon: AiOutlineInstagram, href: "https://www.instagram.com/allahrakha_821?igsh=MXVqOG9uZHh1d2V5bA==", label: "Instagram" },
+                      { icon: AiOutlineGithub, href: "https://github.com/ruwwaad/portfolio", label: "GitHub" },
+                      { icon: AiOutlineLinkedin, href: "https://www.linkedin.com/in/muqeem-malik-166401295 ", label: "LinkedIn" },
+                      { icon: AiOutlineInstagram, href: "https://www.instagram.com/mmuqeemmalik?igsh=NG1iMHZyMmZmeW1h", label: "Instagram" },
                     ].map(({ icon: Icon, href, label }) => (
                       <motion.a
                         key={label}
@@ -194,7 +194,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-[#00a8e8]/20 rounded-full blur-3xl opacity-70 animate-pulse-slow" style={{ animationDuration: '6s' }} />
               <img
                 src="/mypic.png" 
-                alt="Allah Rakha"
+                alt="Muqeem Malik"
                 className="relative z-10 w-full h-full object-cover rounded-full"
               />
             </div>

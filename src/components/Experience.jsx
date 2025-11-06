@@ -3,44 +3,44 @@ import { BiCalendar, BiBriefcase } from "react-icons/bi";
 
 const experiences = [
   {
-    company: "Ruwwaad Technologies",
-    role: "Full-Stack Developer",
-    period: "Oct 2025 - Present",
-    type: "Full-time",
+    company: "CloudEva Tech",
+    role: "Software Development Engineer",
+    period: "July 2025 - Current",
+    type: "Onsite",
     description:
-      "Leading full-stack development initiatives, building and maintaining scalable web applications using React and Next.js. Collaborating with cross-functional teams to enhance application performance and ensure seamless user experiences.",
-    technologies: ["React", "Next.js", "Node.js", "Express.js", "MongoDB"],
+      "Engineered and maintained scalable, full-stack web applications using the MERN stack (MongoDB, Express.js, React, Node.js) and Next.js. Contributed to the complete software development lifecycle, from system design and architecture to deployment. Collaborated with cross-functional teams to optimize application performance and build seamless, responsive user interfaces.",
+    technologies: ["React Native", "React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     current: true,
   },
   {
-    company: "Dev Weekends",
+    company: "PITB Incubation Wing",
     role: "MERN Stack Developer",
-    period: "Jan 2024 - Jun 2025",
-    type: "Full-time",
+    period: "Jan 2025 - Jun 2025",
+    type: "Onsite",
     description:
-      "Developed dynamic and robust web applications leveraging React, Next.js, Node.js, and Express. Implemented AWS Serverless technologies including Lambda, DynamoDB, and S3, with PostgreSQL for data-intensive applications.",
-    technologies: ["React", "Next.js", "Node.js", "Express.js", "PostgreSQL"],
+      "Developed and deployed robust MERN stack (MongoDB, Express.js, React, Node.js) applications for various startups within the incubation wing. Focused on rapid prototyping, building RESTful APIs, and creating interactive, data-driven user interfaces. Worked closely with founders to translate business requirements into technical solutions.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB"],
     current: false,
   },
   {
-    company: "Freelance Developer",
-    role: "Full-Stack Consultant",
-    period: "Jun 2024 - Present",
-    type: "Contract",
+    company: "ZUNF Medicare",
+    role: "MERN Stack Developer",
+    period: "Jun 2024 - Dec 2025",
+    type: "Onsite - Part Time",
     description:
-      "Providing full-stack development services to various clients, specializing in React, Next.js, Node.js, and Express applications. Expertise in AWS Serverless architecture and database management.",
-    technologies: ["React", "Next.js", "Node.js", "MongoDB"],
+      "Designed and implemented full-stack solutions for a healthcare application using the MERN stack. Developed secure RESTful APIs with Node.js/Express.js for patient data management and built responsive frontend components in React. Focused on ensuring data integrity and a stable, HIPAA-compliant user experience.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB"],
+    current: false,
+  },
+  {
+    company: "RUWWAAD Technologies",
+    role: "MERN Stack - React Native Developer",
+    period: "Sep 2024 - current",
+    type: "Remote",
+    description:
+      "Serving in a hybrid role, developing both web and mobile applications. Built and maintained full-stack web platforms using the MERN stack (MongoDB, Express.js, React, Node.js). Simultaneously, developed cross-platform mobile applications using React Native, connecting them to the same backend APIs for a unified user experience.",
+    technologies: ["React", "React Native", "Node.js", "Express.js", "MongoDB"],
     current: true,
-  },
-  {
-    company: "Decentral Developers",
-    role: "Frontend Developer Intern",
-    period: "Apr 2023 - Jul 2023",
-    type: "Internship",
-    description:
-      "Completed frontend development internship, developing responsive and user-friendly interfaces. Contributed to real-world projects using modern JavaScript frameworks and CSS methodologies.",
-    technologies: ["JavaScript", "React", "CSS", "HTML"],
-    current: false,
   },
 ];
 
@@ -53,9 +53,6 @@ const Experience = () => {
         <div className="flex justify-center">
           <div className="text-center mb-12 lg:mb-16">
             
-            {/* REMOVED the <svg> wavy line.
-              This block with the straight lines is from your original code and matches the screenshot.
-            */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

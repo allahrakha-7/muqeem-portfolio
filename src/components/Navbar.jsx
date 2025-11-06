@@ -66,7 +66,7 @@ const Navbar = () => {
             className="text-3xl font-bold text-[#00a8e8] cursor-pointer"
             onClick={closeNav}
           >
-            AllahRakha
+            MuqeemMalik
           </Link>
         </motion.div>
 

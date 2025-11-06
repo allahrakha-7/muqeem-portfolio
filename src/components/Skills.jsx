@@ -14,10 +14,8 @@ import {
   SiTypescript,
   SiExpress,
   SiVercel,
-  SiSupabase,
   SiMysql,
 } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandReactNative } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion"; 
 
@@ -26,7 +24,6 @@ const skillCategories = {
     { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
     { name: "React", icon: <DiReact className="text-blue-400" /> },
-    { name: "Next.js", icon: <RiNextjsFill className="text-white" /> },
     { name: "React-Native", icon: <TbBrandReactNative className="text-white" /> },
     { name: "Tailwind CSS", icon: <BiLogoTailwindCss className="text-cyan-400" /> },
   ],
@@ -38,7 +35,6 @@ const skillCategories = {
     { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
     { name: "MySQL", icon: <SiMysql className="text-green-600" /> },
     { name: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-500" /> },
-    { name: "Supabase", icon: <SiSupabase className="text-blue-500" /> },
   ],
   Tools: [
     { name: "GitHub", icon: <DiGithubBadge className="text-gray-400" /> },

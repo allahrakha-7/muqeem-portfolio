@@ -34,20 +34,20 @@ const Footer = () => {
               >
                 <h3 className="text-3xl font-bold text-[#ffffff] mb-4">
                   {/* 3. Styled name with 'picton_blue' */}
-                  <span className="text-[#00a8e8]">Allah</span>
-                  <span className="text-[#00a8e8]"> Rakha</span>
+                  <span className="text-[#00a8e8]">Muqeem</span>
+                  <span className="text-[#00a8e8]"> Malik</span>
                 </h3>
                 <p className="text-[#cccccc] leading-relaxed mb-6 max-w-md">
-                  Full-stack developer passionate about creating exceptional
-                  digital experiences. Specializing in React, Node.js, and
+                  Software developer passionate about creating exceptional
+                  digital experiences. Specializing in React, React Native, Node.js, and
                   modern web technologies.
                 </p>
                 {/* 4. Styled social icons */}
                 <div className="flex gap-4">
                   {[
-                    { icon: AiOutlineGithub, href: "https://github.com/allahrakha-7/", label: "GitHub" },
-                    { icon: AiOutlineLinkedin, href: "https://www.linkedin.com/in/allahrakha7/", label: "LinkedIn" },
-                    { icon: AiOutlineInstagram, href: "https://www.instagram.com/allahrakha_821?igsh=MXVqOG9uZHh1d2V5bA==", label: "Instagram" },
+                    { icon: AiOutlineGithub, href: "https://github.com/ruwwaad/portfolio", label: "GitHub" },
+                    { icon: AiOutlineLinkedin, href: "https://www.linkedin.com/in/muqeem-malik-166401295 ", label: "LinkedIn" },
+                    { icon: AiOutlineInstagram, href: "https://www.instagram.com/mmuqeemmalik?igsh=NG1iMHZyMmZmeW1h", label: "Instagram" },
                   ].map(({ icon: Icon, href, label }) => (
                     <motion.a
                       key={label}
@@ -111,8 +111,8 @@ const Footer = () => {
                 <h4 className="text-[#ffffff] font-semibold mb-4 text-lg">Services</h4>
                 <ul className="space-y-3">
                   {[
-                    "Web Development",
                     "Mobile Apps",
+                    "Web Development",
                     "UI/UX Design",
                     "Consulting",
                   ].map((service) => (
@@ -137,7 +137,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               className="text-[#999999] text-sm flex items-center gap-2"
             >
-              © {currentYear} Allah Rakha. Made with
+              © {currentYear} Muqeem Malik. Made with
               <AiOutlineHeart className="text-red-500" size={16} />
             </motion.p>
             <motion.p

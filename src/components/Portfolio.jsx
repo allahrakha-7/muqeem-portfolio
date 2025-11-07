@@ -83,6 +83,32 @@ const projects = [
     },
     featured: true,
   },
+  {
+    img: "/muqeem'sgpt1.jpg",
+    sliderImages: ["/muqeem'sgpt1.jpg", "/muqeem'sgpt2.jpg"],
+    title: "Muqeem's GPT - AI Chatbot",
+    description:
+      "A unique web app, by training an AI model to respond to messages, photos, and allows users to interact that talks.",
+    technologies: ["React", "AI/LLM", "Node.js", "Python", "MongoDB"],
+    links: {
+      site: "#",
+      github: "#",
+    },
+    featured: true,
+  },
+  {
+    img: "/ruwwaadskp1.jpg",
+    sliderImages: ["/ruwwaadskp1.jpg", "ruwwaadskp2.jpg", "/ruwwaadskp3.jpg", "/ruwwaadskp4.jpg", "/ruwwaadskp5.jpg", "/ruwwaadskp6.jpg", "/ruwwaadskp7.jpg", "/ruwwaadskp8.jpg", "/ruwwaadskp9.jpg"],
+    title: "Reflekin - AI Memorial App",
+    description:
+      "A unique React site for RUWWAAD Technologies.",
+    technologies: ["JavaScript", "React",  "Framer Motion", "TailwindCSS", "HTML/CSS"],
+    links: {
+      site: "#",
+      github: "#",
+    },
+    featured: true,
+  },
 ];
 
 const Portfolio = () => {
@@ -277,7 +303,7 @@ const Portfolio = () => {
       {/* Modal is rendered here */}
       <AnimatePresence>
         {selectedProject && (
-          <ProjectModal 
+          <ProjectModal
             project={selectedProject} 
             onClose={() => setSelectedProject(null)} 
           />

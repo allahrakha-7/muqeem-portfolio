@@ -29,3 +29,13 @@ html, body {
   overflow-x: hidden;
   background-color: #00171f;
 }
+
+/* Hide scrollbars globally for .scrollbar-hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

@@ -5,14 +5,12 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import { motion } from "framer-motion";
-import PdfResume from '../../public/Allah Rakha_Resume.pdf'
 
-// --- Main Hero Component (Re-skinned) ---
 const Hero = () => {
   function downloadResumeAsPDF() {
     const link = document.createElement("a");
-    link.href = PdfResume;
-    link.download = "AllahRakha_Resume.pdf";
+    link.href = "";
+    link.download = "#";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

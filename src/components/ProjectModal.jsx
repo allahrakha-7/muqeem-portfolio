@@ -37,7 +37,7 @@ const ProjectModal = ({ project, onClose }) => {
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-[#00171f]/80 backdrop-blur-md p-4"
+      className="fixed inset-0 z-50 pt-4 flex items-center justify-center bg-[#00171f]/80 backdrop-blur-md p-4"
       variants={backdropVariants}
       initial="hidden"
       animate="visible"
@@ -46,7 +46,7 @@ const ProjectModal = ({ project, onClose }) => {
     >
       <motion.div
         // 2. FIXED: Added pt-6 md:pt-8 for top spacing
-        className="relative w-full max-w-4xl bg-[#003459] rounded-2xl shadow-xl overflow-hidden border border-[#007ea7]/50 pt-6 md:pt-8"
+        className="relative w-full max-w-2xl  bg-[#003459] rounded-2xl shadow-xl border border-[#007ea7]/50 pt-6 md:pt-8"
         variants={modalVariants}
         onClick={(e) => e.stopPropagation()} 
       >
@@ -60,7 +60,7 @@ const ProjectModal = ({ project, onClose }) => {
         </button>
 
         {/* --- Image Slider --- */}
-        <div className="relative w-full bg-[#00171f]">
+        <div className="relative w-full bg-[#00171f] ">
           <AnimatePresence mode="wait">
             <motion.img
               key={currentIndex}
@@ -105,7 +105,7 @@ const ProjectModal = ({ project, onClose }) => {
 
         {/* --- Project Description --- */}
         {/* This div already has p-6 md:p-10, which includes bottom padding */}
-        <div className="p-6 md:p-10 max-h-60 overflow-y-auto">
+        <div className="p-6 md:p-10 max-h-40 overflow-y-auto scrollbar-thin scrollbar-hide scrollbar-thumb-[#007ea7]/50 scrollbar-track-transparent">
           <h2 className="text-3xl font-bold text-[#ffffff] mb-4">
             {project.title}
           </h2>

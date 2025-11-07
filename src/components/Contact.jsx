@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-12 lg:py-20 bg-[#00171f]">
+    <section id="contact" className="py-10 lg:py-18 bg-[#00171f]">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         
         {/* --- Title Section --- */}
@@ -101,7 +101,7 @@ const Contact = () => {
           </motion.p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           
           <motion.div
             className="space-y-8"
@@ -112,7 +112,7 @@ const Contact = () => {
           >
             <motion.div
               variants={itemVariants}
-              className="bg-[#003459] rounded-2xl p-6 lg:p-8 border border-[#003459] shadow-lg"
+              className="bg-[#003459] rounded-2xl p-4 lg:p-6 border border-[#003459] shadow-lg"
             >
               <h3 className="text-2xl lg:text-3xl font-bold text-[#ffffff] mb-6">
                 About Me
@@ -134,7 +134,7 @@ const Contact = () => {
             {/* Contact Info Card */}
             <motion.div
               variants={itemVariants}
-              className="bg-[#003459] rounded-2xl p-6 lg:p-8 border border-[#003459] shadow-lg"
+              className="bg-[#003459] rounded-2xl p-4 lg:p-6 border border-[#003459] shadow-lg"
             >
               <h3 className="text-2xl font-bold text-[#ffffff] mb-6">
                 Contact Information
@@ -171,7 +171,7 @@ const Contact = () => {
               {/* Stats */}
               <motion.div
                 variants={itemVariants}
-                className="bg-[#003459] rounded-2xl p-6 text-center border border-[#003459] shadow-lg"
+                className="bg-[#003459] rounded-2xl p-5 text-center border border-[#003459] shadow-lg"
               >
                 <div className="grid grid-cols-3 gap-4">
                   {[
@@ -192,7 +192,7 @@ const Contact = () => {
               {/* Socials */}
               <motion.div
                 variants={itemVariants}
-                className="bg-[#003459] rounded-2xl p-6 flex items-center justify-center gap-4 border border-[#003459] shadow-lg"
+                className="bg-[#003459] rounded-2xl p-5 flex items-center justify-center gap-4 border border-[#003459] shadow-lg"
               >
                 {[
                   { icon: AiOutlineGithub, href: "https://github.com/ruwwaad/portfolio", label: "GitHub" },

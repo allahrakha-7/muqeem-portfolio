@@ -118,8 +118,8 @@ const Contact = () => {
                 About Me
               </h3>
               <p className="text-[#cccccc] leading-relaxed mb-6">
-                I am a skilled software developer with experience in building
-                scalable web applications using React, React Native, Express.js and
+                I am a skilled Software Developement Engineer with experience in building
+                scalable web applications using React, Next.js, Express.js and
                 Node.js. I specialize in creating user-friendly
                 interfaces and robust backend systems, with a strong focus on
                 performance and efficiency.
@@ -167,7 +167,7 @@ const Contact = () => {
             </motion.div>
 
             {/* Stats & Socials Row */}
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 gap-2">
               {/* Stats */}
               <motion.div
                 variants={itemVariants}
@@ -175,15 +175,15 @@ const Contact = () => {
               >
                 <div className="grid grid-cols-3 gap-4">
                   {[
-                    { number: "15+", label: "Projects" },
+                    { number: "5+", label: "Projects" },
                     { number: "2+", label: "Years Exp." },
-                    { number: "30+", label: "Happy Clients" },
+                    { number: "15+", label: "Happy Clients" },
                   ].map((stat) => (
                     <div key={stat.label}>
-                      <div className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-[#00a8e8] to-[#007ea7] bg-clip-text text-transparent mb-1">
+                      <div className="text-lg max-sm:text-lg lg:text-3xl font-bold bg-gradient-to-r from-[#00a8e8] to-[#007ea7] bg-clip-text text-transparent mb-1">
                         {stat.number}
                       </div>
-                      <div className="text-[#999999] text-sm">{stat.label}</div>
+                      <div className="text-[#999999] text-sm max-sm:text-[10px]">{stat.label}</div>
                     </div>
                   ))}
                 </div>
@@ -206,7 +206,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-12 h-12 bg-[#00171f]/50 hover:bg-[#00a8e8]/10 rounded-full flex items-center justify-center text-[#999999] hover:text-white transition-all duration-300 border border-[#00171f]"
+                    className="w-12 h-12 max-sm:w-7 max-sm:h-7 bg-[#00171f]/50 hover:bg-[#00a8e8]/10 rounded-full flex items-center justify-evenly text-[#999999] hover:text-white transition-all duration-300 border border-[#00171f]"
                     aria-label={label}
                   >
                     <Icon size={20} />

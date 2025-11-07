@@ -187,9 +187,9 @@ const Skills = () => {
             className="mt-12 lg:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
           >
             {[
-              { number: "1.5+", label: "Years Experience" },
-              { number: "5+", label: "Projects Completed" },
-              { number: "12+", label: "Technologies" },
+              { number: "2+", label: "Years Experience" },
+              { number: "15+", label: "Projects Completed" },
+              { number: "15+", label: "Technologies" },
               { number: "100%", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <div key={stat.label} className="text-center">

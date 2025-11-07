@@ -133,7 +133,7 @@ const Hero = () => {
                 transition={{ delay: 0.8, duration: 0.8 }}
                 className="text-xl text-[#cccccc] leading-relaxed max-w-xl text-center lg:text-left"
               >
-                Passionate software developer with 2+ years of experience
+                Passionate Software Developement Engineer with 2+ years of experience
                 crafting exceptional digital experiences. I specialize in React Native,
                 Node.js, and modern app & web technologies to bring ideas to life.
               </motion.p>

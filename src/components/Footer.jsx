@@ -38,7 +38,7 @@ const Footer = () => {
                   <span className="text-[#00a8e8]"> Malik</span>
                 </h3>
                 <p className="text-[#cccccc] leading-relaxed mb-6 max-w-md">
-                  Software developer passionate about creating exceptional
+                  Software Developement Engineer passionate about creating exceptional
                   digital experiences. Specializing in React, React Native, Node.js, and
                   modern web technologies.
                 </p>
